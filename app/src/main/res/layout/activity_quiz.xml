@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#96fab3"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/txtTotalQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#3E9BC8"
+        android:gravity="center_horizontal"
+        android:text="Question: 1/10"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginEnd="10dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:text="Score: 1/10"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="6dp" />
+
+        <TextView
+            android:id="@+id/txtcorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="Correct: 6"
+            android:textAlignment="center"
+            android:textColor="#1034A1"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtwrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="Wrong: 5"
+            android:textAlignment="center"
+            android:textColor="#D81818"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtviewtimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="00:30"
+            android:textAlignment="center"
+            android:textColor="#D88A16"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:text="Which of the following is NOT a valid deadlock prevention scheme ?"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_Button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:button="@null"
+                android:freezesText="true"
+                android:gravity="left"
+                android:padding="12sp"
+                android:text="1.  Release all resources before requesting a new resource."
+                android:textColor="#000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_Button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:button="@null"
+                android:freezesText="true"
+                android:gravity="left"
+                android:padding="12sp"
+                android:text="2.  Number the resources uniquely and never request a lower numbered resource than the last one requested."
+                android:textColor="#000"
+                android:textColorLink="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_Button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:button="@null"
+                android:freezesText="true"
+                android:gravity="left"
+                android:padding="12sp"
+                android:text="3.  Never request a resource after releasing any resource."
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_Button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:button="@null"
+                android:freezesText="true"
+                android:gravity="left"
+                android:padding="12sp"
+                android:text="4.  Request and all required resources be allocated before execution."
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="90dp"
+            android:background="@drawable/confirm_button_background"
+            android:text="NEXT"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#E8EFA7"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:text="NEXT" />
+    </LinearLayout>
+</LinearLayout>
